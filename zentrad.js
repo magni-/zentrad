@@ -113,7 +113,7 @@ $(function() {
     delay: 0,
     autoFocus: true,
     select: function(event, ui) {
-      if (event.keyCode === 9) { // tab
+      if (event.which === 1 || event.which === 9 || event.which === 13) { // click, tab, or enter
         event.preventDefault();
         this.value = "";
         var language = ui.item.value;
